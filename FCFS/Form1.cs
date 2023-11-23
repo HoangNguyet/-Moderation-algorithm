@@ -7,12 +7,28 @@ namespace FCFS
     public partial class Form1 : Form
     {
         private List<Process> processes = new List<Process>();
+
         public Form1()
         {
             InitializeComponent();
+            InitializeDataGridView();
         }
 
+        private void InitializeDataGridView()
+        {
+            // Thiết lập cột cho DataGridView1
+            dataGridView1.Columns.Add("Name", "Tên");
+            dataGridView1.Columns.Add("ArrivalTime", "Thời gian đến");
+            dataGridView1.Columns.Add("BurstTime", "Thời gian thực hiện");
 
+            //Thiết lập cột cho datagridView2
+            dataGridView2.Columns.Add("", "Tên");
+            dataGridView2.Columns.Add("", "Thời gian bắt đầu");
+            dataGridView2.Columns.Add("", "Thời gian chờ");
+            dataGridView2.Columns.Add("", "Thời gian hoàn thành");
+            dataGridView2.Columns.Add("", "Thời gian lưu lại");
+
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -36,9 +52,11 @@ namespace FCFS
                 processes.Add(process);
 
                 // Hiển thị thông tin tiến trình trong ListBox
-                lbProcesses.Items.Add($"{process.Name}: Thời gian vào: {arrivalTime}, Thời gian sử dụng CPU: {burstTime}");
+                //lbProcesses.Items.Add($"{process.Name}: Thời gian vào: {arrivalTime}, Thời gian sử dụng CPU: {burstTime}");
+                dataGridView1.Rows.Add(process.Name, process.ArrivalTime, process.BurstTime);
                 txtArrivalTime.Text = "";
                 txtBurstTime.Text = "";
+                txtArrivalTime.Focus();
             }
             else
             {
@@ -57,7 +75,7 @@ namespace FCFS
                 int totalWaitTime = 0;
                 //int totalTurnaroundTime = 0;
                 int currentTime = 0; // Thời gian bắt đầu dùng CPU
-                lbResult.Text = "Kết quả lịch trình FCFS:\r\n";
+                //lbResult.Text = "Kết quả lịch trình FCFS:\r\n";
 
                 foreach (var process in processes)
                 {
@@ -70,7 +88,8 @@ namespace FCFS
 
                     totalWaitTime += waitTime;
                     //totalTurnaroundTime += turnaroundTime;
-                    lbResult.Items.Add($"{process.Name}: Thời gian bắt đầu = {currentTime}, Thời gian chờ đợi = {waitTime}, Thời gian hoàn thành = {currentTime + process.BurstTime}\r\n");
+                    //lbResult.Items.Add($"{process.Name}: Thời gian bắt đầu = {currentTime}, Thời gian chờ = {waitTime}\r\n, Thời gian hoàn thành = {currentTime + process.BurstTime}\n, Thời gian lưu lại = {currentTime + process.BurstTime - process.ArrivalTime}\r\n");
+                    dataGridView2.Rows.Add(process.Name, currentTime, waitTime, currentTime + process.BurstTime, currentTime + process.BurstTime - process.ArrivalTime);
                     currentTime += process.BurstTime;
                 }
                 // Tính thời gian chờ đợi trung bình
