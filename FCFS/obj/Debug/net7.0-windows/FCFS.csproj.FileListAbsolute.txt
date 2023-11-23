@@ -1,0 +1,17 @@
+D:\university\Nam III\NLHDH\code\FCFS\FCFS\bin\Debug\net7.0-windows\FCFS.exe
+D:\university\Nam III\NLHDH\code\FCFS\FCFS\bin\Debug\net7.0-windows\FCFS.deps.json
+D:\university\Nam III\NLHDH\code\FCFS\FCFS\bin\Debug\net7.0-windows\FCFS.runtimeconfig.json
+D:\university\Nam III\NLHDH\code\FCFS\FCFS\bin\Debug\net7.0-windows\FCFS.dll
+D:\university\Nam III\NLHDH\code\FCFS\FCFS\bin\Debug\net7.0-windows\FCFS.pdb
+D:\university\Nam III\NLHDH\code\FCFS\FCFS\obj\Debug\net7.0-windows\FCFS.csproj.AssemblyReference.cache
+D:\university\Nam III\NLHDH\code\FCFS\FCFS\obj\Debug\net7.0-windows\FCFS.Form1.resources
+D:\university\Nam III\NLHDH\code\FCFS\FCFS\obj\Debug\net7.0-windows\FCFS.csproj.GenerateResource.cache
+D:\university\Nam III\NLHDH\code\FCFS\FCFS\obj\Debug\net7.0-windows\FCFS.GeneratedMSBuildEditorConfig.editorconfig
+D:\university\Nam III\NLHDH\code\FCFS\FCFS\obj\Debug\net7.0-windows\FCFS.AssemblyInfoInputs.cache
+D:\university\Nam III\NLHDH\code\FCFS\FCFS\obj\Debug\net7.0-windows\FCFS.AssemblyInfo.cs
+D:\university\Nam III\NLHDH\code\FCFS\FCFS\obj\Debug\net7.0-windows\FCFS.csproj.CoreCompileInputs.cache
+D:\university\Nam III\NLHDH\code\FCFS\FCFS\obj\Debug\net7.0-windows\FCFS.dll
+D:\university\Nam III\NLHDH\code\FCFS\FCFS\obj\Debug\net7.0-windows\refint\FCFS.dll
+D:\university\Nam III\NLHDH\code\FCFS\FCFS\obj\Debug\net7.0-windows\FCFS.pdb
+D:\university\Nam III\NLHDH\code\FCFS\FCFS\obj\Debug\net7.0-windows\FCFS.genruntimeconfig.cache
+D:\university\Nam III\NLHDH\code\FCFS\FCFS\obj\Debug\net7.0-windows\ref\FCFS.dll
